@@ -23,7 +23,7 @@ const Navbar = () => {
               Blog
             </NavLink>
             <NavLink to="classes" className="hover:text-[#dc2626] ">
-              Pricing
+              Classes
             </NavLink>
             <NavLink to="about" className="hover:text-[#dc2626] ">
               About
