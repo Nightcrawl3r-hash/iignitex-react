@@ -5,6 +5,13 @@ import RedTitle from "./RedTitle";
 import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
 import FooterUp from "../assets/footer-up.webp";
 import { NavLink } from "react-router-dom";
+import Company from "./Company";
+import Coaches from "./Coaches";
+import WhyChoose from "./WhyChoose";
+import WhatWeDo from "./WhatWeDo";
+import HomepageTile from "./HomepageTile";
+
+
 
 const Home = () => {
   return (
@@ -45,6 +52,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <HomepageTile/>
+      <WhatWeDo/>
+      <WhyChoose />
+      <Coaches />
+      <Company />
       <BlogTileHome />
       <CallNumber />
     </div>
