@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import Join from "./Join";
+
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
               Contact
             </NavLink>
           </div>
-          <NavLink to="join" className="flex justify-end">
+          <NavLink to="contact" className="flex justify-end">
             <button className="bg-blue-600 text-gray-50 outline-none p-2 rounded-lg hover:bg-blue-800 transition-all ease-in-out duration-75 shadow-2xl">
               Join Class Now
             </button>
