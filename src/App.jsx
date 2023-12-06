@@ -8,7 +8,6 @@ import Pricing from "./Components/Pricing";
 import Blog from "./Components/Blog";
 import Classes from "./Components/Classes";
 import Contact from "./Components/Contact";
-
 import Footer from "./Components/Footer";
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/classes" element={<Classes />} />
-
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
