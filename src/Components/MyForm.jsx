@@ -98,31 +98,31 @@ const MyForm = () => {
           placeholder="Select Your className"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
         >
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Body Building
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Boxing
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Running
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Fitness
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Yoga
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Workout
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Karate
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Meditation
           </option>
-          <option value="" class="capitalize">
+          <option value="" className="capitalize">
             Cycling
           </option>
          

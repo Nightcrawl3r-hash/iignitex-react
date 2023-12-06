@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="container m-auto">
-      <div className="grid grid-cols-3 pt-16 pb-4 items-center">
+      <div className="grid md:grid-cols-3 pt-16 pb-4 items-center px-2 md:px-0">
         <div className="flex flex-col items-start">
           <Logo />
           <p className="text-gray-700 py-1">
@@ -31,7 +31,7 @@ const Footer = () => {
             Privacy Policy | &copy; 2023 Iignitex
           </h3>
         </div>
-        <div className="flex justify-center">
+        <div className="flex md:justify-center">
           <div className="">
             <h2 className="text-3xl pb-2 font-bold underline decoration-[#dc2626] underline-offset-4  text-gray-800">
               Our Classes
@@ -80,7 +80,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex md:justify-center">
           <div className="">
             <p className="text-3xl pb-2 font-bold underline decoration-[#dc2626] underline-offset-4  text-gray-800">
               Working Hours

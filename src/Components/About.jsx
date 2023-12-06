@@ -5,7 +5,7 @@ import RedTitle from "./RedTitle";
 import Button from "./Button";
 const About = () => {
   return (
-    <div className="container m-auto py-16">
+    <div className="container m-auto py-16 px-2 md:px-0">
       <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-4 underline decoration-[#FF0336]">
         About Us
       </p>
@@ -30,7 +30,7 @@ const About = () => {
           adventure.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4 py-2 bg-white justify-center items-center" >
+      <div className="grid md:grid-cols-2 gap-4 py-2 bg-white justify-center items-center" >
         <div className="">
           <img src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" />
         </div>

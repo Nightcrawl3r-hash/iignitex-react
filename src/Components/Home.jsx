@@ -11,8 +11,6 @@ import WhyChoose from "./WhyChoose";
 import WhatWeDo from "./WhatWeDo";
 import HomepageTile from "./HomepageTile";
 
-
-
 const Home = () => {
   return (
     <div className="">
@@ -20,7 +18,7 @@ const Home = () => {
         className="h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Background})` }}
       >
-        <div className="grid grid-cols-2 items-center h-full container m-auto">
+        <div className="grid md:grid-cols-2 items-center h-full container m-auto px-2 md:px-0">
           <div className="flex flex-col items-start">
             <RedTitle text={"find your energy"} />
             <h2 className="text-7xl font-semibold uppercase text-[#dc2626] py-4 ">
@@ -32,9 +30,11 @@ const Home = () => {
             <Button text={`Our Classes`} destination={`classes`} />
           </div>
 
-          <div class="flex flex-row-reverse -rotate-90 text-white absolute top-2/4 right-0 items-center  ">
-            <p class="uppercase  text-2xl font-bold tracking-widest">share</p>
-            <span class="w-[35px] bg-[#FF0336] h-[2.5px] mr-6"></span>
+          <div className=" hidden md:flex flex-row-reverse -rotate-90 text-white absolute top-2/4 right-0 items-center  ">
+            <p className="uppercase  text-2xl font-bold tracking-widest">
+              share
+            </p>
+            <span className="w-[35px] bg-[#FF0336] h-[2.5px] mr-6"></span>
             <div className="flex  gap-4 ">
               <CiFacebook
                 size={36}
@@ -52,8 +52,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <HomepageTile/>
-      <WhatWeDo/>
+      <HomepageTile />
+      <WhatWeDo />
       <WhyChoose />
       <Coaches />
       <Company />
@@ -66,7 +66,7 @@ const Home = () => {
 function CallNumber() {
   return (
     <div className="" style={{ backgroundImage: `url(${FooterUp})` }}>
-      <div className="container m-auto">
+      <div className="container m-auto px-2 md:px-0">
         <div className="text-gray-100 flex flex-col py-24">
           <h2 className="text-4xl font-semibold pb-1">
             Need a Fitness Trainer?
@@ -83,17 +83,17 @@ function CallNumber() {
 
 function BlogTileHome() {
   return (
-    <div className="container m-auto py-16">
+    <div className="container m-auto py-16 px-2 md:px-0">
       <div className="flex flex-col justify-center">
         <RedTitle text={"blog"} />
-        <h1 class="capitalize font-bold text-5xl text-center py-2">
+        <h1 className="capitalize font-bold text-5xl text-center py-2">
           our recent news
         </h1>
-        <p class=" text-center text-gray-600 font-semibold">
+        <p className=" text-center text-gray-600 font-semibold">
           IgniteX an unknown printer took a galley of type and scrambled make a
           type specimen book.
         </p>
-        <div className=" grid grid-cols-3 gap-4 py-4">
+        <div className=" grid md:grid-cols-3 gap-4 py-4">
           <BlogSmallTile
             text={`Yoga For Everyone in 2023`}
             date={`22.03.2023`}
@@ -128,7 +128,7 @@ function BlogSmallTile({ text, date, subtitle }) {
       </button>
       <h2 className="font-bold text-2xl 2xl:text-3xl py-4">{text}</h2>
       <p className="text-gray-500 font-semibold ">{subtitle}</p>
-      <section class="py-8">
+      <section className="py-8">
         <NavLink
           to="blog"
           className=" relative uppercase text-tahiti-50 bg-gray-700 font-bold md:px-6 md:py-4  px-8 py-4 group"

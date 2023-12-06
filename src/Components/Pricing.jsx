@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
-    <div className="container m-auto py-16">
+    <div className="container m-auto py-16 px-2 md:px-0">
       <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
         Pricing
       </p>
@@ -17,8 +17,8 @@ const Pricing = () => {
           type specimen book.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-12">
-        <div className="p-6 bg-gray-800 rounded-lg">
+      <div className="grid md:grid-cols-3  gap-4 lg:gap-12">
+        <div className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
           <PricingTable title={`Basic plan`} price={`RS1500`} />
           <div className="flex flex-col gap-y-1">
             <Checked text={`Gym access`} />
@@ -33,7 +33,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
+        <div className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
           <PricingTable title={`standard plan`} price={`RS2500`} />
           <div className="flex flex-col gap-y-1">
             <Checked text={`Gym access`} />
@@ -49,7 +49,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="p-6 bg-gray-800 rounded-lg">
+        <div className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
           <PricingTable title={`premium plan`} price={`RS3500`} />
           <div className="flex flex-col gap-y-1">
             <Checked text={`Gym access`} />

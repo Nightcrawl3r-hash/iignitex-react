@@ -5,7 +5,7 @@ import image3 from "../assets/workout.png";
 const HomepageTile = () => {
   return (
     <div className="container m-auto">
-      <div className="grid grid-cols-3 gap-4 items-center justify-center">
+      <div className="grid md:grid-cols-3 gap-4 items-center justify-center px-2 md:px-2">
         <Tile
           subtitle={`Our team of experts will work with you to create a customized plan that
         helps you achieve success one step at a time.`}

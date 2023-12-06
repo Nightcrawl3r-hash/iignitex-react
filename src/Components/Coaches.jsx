@@ -11,14 +11,14 @@ const Coaches = () => {
       <div className="container m-auto py-16">
         <div className="flex flex-col justify-center">
           <RedTitle text={`gym trainers`} />
-          <h1 class="capitalize font-bold text-5xl text-center py-2">
+          <h1 className="capitalize font-bold text-5xl text-center py-2">
             team of expert coaches
           </h1>
           <p className="text-center text-gray-600 font-semibold">
             Expert team of coaches helps you succeed in any goal, personalized
             guidance and motivation provided!
           </p>
-          <div className="grid grid-cols-3 gap-4 justify-center items-center text-center py-4">
+          <div className="grid md:grid-cols-3 gap-4 justify-center items-center text-center py-4">
             <CoachTile
               image={image1}
               title={`Aiden Nelson`}

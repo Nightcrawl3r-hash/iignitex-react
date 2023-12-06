@@ -4,11 +4,11 @@ import MyForm from "./MyForm";
 
 const Contact = () => {
   return (
-    <div className="container m-auto py-16">
+    <div className="container m-auto py-16 px-2 md:px-0">
       <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
         Contact Us
       </p>
-      <div className="grid grid-cols-2 gap-4 py-16 ">
+      <div className="grid md:grid-cols-2 gap-4 py-16 ">
         <div className="">
           <h2 className="text-5xl font-semibold text-gray-800 pb-2">
             We are here to help you! To shape your body.

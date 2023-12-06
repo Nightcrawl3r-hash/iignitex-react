@@ -30,7 +30,7 @@ const recent_posts = [
 
 const RecentPosts = () => {
   return (
-    <div className="bg-gray-50 p-6 my-8">
+    <div className="bg-gray-50 p-2  md:p-6 my-8">
       <h2 className="text-3xl font-semibold text-gray-700 underline underline-offset-4 decoration-[#dc2626] py-2">
         Recent Posts
       </h2>

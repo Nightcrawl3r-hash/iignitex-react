@@ -11,10 +11,10 @@ const WhyChoose = () => {
   return (
     <div>
       <div className="" style={{ backgroundImage: `url(${dark})` }}>
-        <div className="container m-auto py-16">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="container m-auto py-16 px-2 md:px-0">
+          <div className="grid md:grid-cols-2 gap-4">
             <div className="">
-              <img src={darkboy} alt="image" className="" />
+              <img src={darkboy} alt="image" className="p-2" />
             </div>
             <div className="">
               <RedTitle text={` why choose us`} />

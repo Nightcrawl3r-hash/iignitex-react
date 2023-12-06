@@ -99,8 +99,8 @@ const Blog = () => {
       <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
         Blogs
       </p>
-      <div className=" grid grid-cols-4 gap-4">
-        <div className="flex flex-col justify-center py-16 gap-8 col-span-3">
+      <div className=" grid md:grid-cols-5 lg:grid-cols-4 gap-4 px-2 md:px-0">
+        <div className="flex flex-col justify-center py-16 gap-8   col-span-3">
           {blogPosts.map((blog) => (
             <div className="bg-gray-50 p-6" key={blog.author}>
               <div className="">
@@ -123,7 +123,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className="py-16">
+        <div className=" md:py-16  md:col-span-2 lg:col-auto ">
           <Category />
           <RecentPosts/>
         </div>

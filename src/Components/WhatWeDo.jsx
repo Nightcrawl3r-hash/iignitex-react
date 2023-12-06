@@ -7,14 +7,18 @@ import image3 from "../assets/3.png";
 import girl from "../assets/girl running.png";
 const WhatWeDo = () => {
   return (
-    <div className="container m-auto py-16">
-      <div className="flex flex-cols-2 gap-2">
-        <div className="flex flex-col items-start">
+    <div className="container m-auto py-16 px-2 md:px-0">
+      <div className="grid md:grid-cols-2 gap-2">
+        <div className="flex justify-center items-center md:order-last ">
+          <img src={girl} alt="image" />
+        </div>
+
+        <div className="flex flex-col items-start  ">
           <RedTitle text={`what we do`} />
-          <h2 className="text-5xl font-semibold py-2 w-2/3">
+          <h2 className="text-5xl font-semibold py-2 lg:w-2/3">
             Take Your Health And Body To Next Level
           </h2>
-          <p className="text-xl py-1 text-gray-700 font-semibold w-2/3">
+          <p className="text-xl py-1 text-gray-700 font-semibold lg:w-2/3">
             Take your health and body to the next level with our comprehensive
             program designed to help you reach your fitness goals.
           </p>
@@ -24,11 +28,8 @@ const WhatWeDo = () => {
             <WhatWeDoTile text={`fancy gym machines`} image={image3} />
           </div>
           <div className="py-2">
-          <Button text={`take a tour`} destination={`classes`} />
+            <Button text={`take a tour`} destination={`classes`} />
           </div>
-        </div>
-        <div className="">
-          <img src={girl} alt="image" />
         </div>
       </div>
     </div>
