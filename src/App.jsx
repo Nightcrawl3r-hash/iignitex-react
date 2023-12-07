@@ -13,7 +13,7 @@ import Footer from "./Components/Footer";
 const App = () => {
   return (
     <div className="">
-      <BrowserRouter basename="/iignitex-react">
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
