@@ -1,9 +1,0 @@
-{
-    "name": "ii",
-    "version": 2,
-    "builds": [
-      { "src": "/Desktop/i/ii", "use": "@vercel/node" }
-    ],
-    "routes": [
-    ]
-  }

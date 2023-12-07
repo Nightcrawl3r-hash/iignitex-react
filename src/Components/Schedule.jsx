@@ -3,9 +3,8 @@ import axios from "axios";
 
 const Schedule = () => {
   const URL = `http://localhost:6900/weeklySchedule`;
-  const [Data, setData] = useState([]);
+   const [Data, setData] = useState([]);
   const [selectedDay, setselectedDay] = useState("Sunday");
-
 
   const displaySchedule = (day) => {
     const daySchedule = Data.find((item) => item.day === day);
@@ -13,7 +12,6 @@ const Schedule = () => {
     if (daySchedule) {
       return (
         <div className="">
-         
           {daySchedule.classes.map((cls) => (
             <div key={cls.className}>
               <div className="grid grid-cols-3 bg-gray-50 p-6 text-gray-800 ">
@@ -62,7 +60,7 @@ const Schedule = () => {
                   Weekly Schedule
                 </h1>
 
-                <select
+                {/* <select
                   value={selectedDay}
                   onChange={(e) => setselectedDay(e.target.value)}
                   className="p-2 rounded-sm bg-gray-50 text-xl"
@@ -72,11 +70,23 @@ const Schedule = () => {
                       {item.day}
                     </option>
                   ))}
-                </select>
+                </select> */}
+                {Data.length > 0 && (
+                  <select
+                    value={selectedDay}
+                    onChange={(e) => setselectedDay(e.target.value)}
+                    className="p-2 rounded-sm bg-gray-50 text-xl"
+                  >
+                    {Data.map((item) => (
+                      <option key={item.day} value={item.day}>
+                        {item.day}
+                      </option>
+                    ))}
+                  </select>
+                )}
               </div>
               <div className="col-span-4">{displaySchedule(selectedDay)}</div>
             </div>
-           
           </div>
         </div>
       </div>
