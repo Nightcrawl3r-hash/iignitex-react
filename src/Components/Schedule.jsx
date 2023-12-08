@@ -60,7 +60,7 @@ const Schedule = () => {
                   Weekly Schedule
                 </h1>
 
-                {/* <select
+                 <select
                   value={selectedDay}
                   onChange={(e) => setselectedDay(e.target.value)}
                   className="p-2 rounded-sm bg-gray-50 text-xl"
@@ -70,8 +70,8 @@ const Schedule = () => {
                       {item.day}
                     </option>
                   ))}
-                </select> */}
-                {Data.length > 0 && (
+                </select> 
+                {/* {Data.length > 0 && (
                   <select
                     value={selectedDay}
                     onChange={(e) => setselectedDay(e.target.value)}
@@ -83,7 +83,7 @@ const Schedule = () => {
                       </option>
                     ))}
                   </select>
-                )}
+                )} */}
               </div>
               <div className="col-span-4">{displaySchedule(selectedDay)}</div>
             </div>
