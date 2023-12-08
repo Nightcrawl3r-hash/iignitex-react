@@ -15,15 +15,4 @@ iignitex is a responsive gym and fitness website built using React and styled wi
 - React
 - Tailwind CSS
 
-## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Contributing](#contributing)
-4. [License](#license)
-5. [Contact](#contact)
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/iignitex.git
-   cd iignitex
