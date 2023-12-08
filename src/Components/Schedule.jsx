@@ -3,8 +3,10 @@ import axios from "axios";
 
 const Schedule = () => {
   const URL = `http://localhost:6900/weeklySchedule`;
-   const [Data, setData] = useState([]);
-  const [selectedDay, setselectedDay] = useState("Sunday");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [Data, setData] = useState([]);
+  const [selectedDay, setselectedDay] = useState("");
 
   const displaySchedule = (day) => {
     const daySchedule = Data.find((item) => item.day === day);
@@ -30,20 +32,19 @@ const Schedule = () => {
   };
 
   useEffect(() => {
-    async function FetchData() {
-      axios
-        .get(URL)
-        .then((response) => {
-          //console.log(response)
-          setData(response.data);
-          //console.log(Data);
-        })
-
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-        });
+    async function fetchData() {
+      try {
+        const response = await axios.get(URL);
+        setData(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
     }
-    FetchData();
+
+    fetchData();
   }, []);
 
   return (
@@ -60,32 +61,26 @@ const Schedule = () => {
                   Weekly Schedule
                 </h1>
 
-                 <select
+                <select
                   value={selectedDay}
                   onChange={(e) => setselectedDay(e.target.value)}
                   className="p-2 rounded-sm bg-gray-50 text-xl"
                 >
+                  <option value="" disabled>
+                    Select a day
+                  </option>
                   {Data.map((item) => (
                     <option key={item.day} value={item.day}>
                       {item.day}
                     </option>
                   ))}
-                </select> 
-                {/* {Data.length > 0 && (
-                  <select
-                    value={selectedDay}
-                    onChange={(e) => setselectedDay(e.target.value)}
-                    className="p-2 rounded-sm bg-gray-50 text-xl"
-                  >
-                    {Data.map((item) => (
-                      <option key={item.day} value={item.day}>
-                        {item.day}
-                      </option>
-                    ))}
-                  </select>
-                )} */}
+                </select>
               </div>
-              <div className="col-span-4">{displaySchedule(selectedDay)}</div>
+              <div className="col-span-4">
+                {!loading && !error ? displaySchedule(selectedDay) : null}
+                {loading && <p>Loading...</p>}
+                {error && <p>Error fetching data. Please try again later.</p>}
+              </div>
             </div>
           </div>
         </div>
