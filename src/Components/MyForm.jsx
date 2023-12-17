@@ -40,7 +40,7 @@ const MyForm = () => {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div data-aos="zoom-in" className="bg-gray-50">
       <form
         action="/api/submit-form"
         method="POST"

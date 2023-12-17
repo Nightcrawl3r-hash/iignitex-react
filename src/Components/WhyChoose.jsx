@@ -11,17 +11,17 @@ const WhyChoose = () => {
   return (
     <div>
       <div className="" style={{ backgroundImage: `url(${dark})` }}>
-        <div className="container m-auto py-16 px-2 md:px-0">
+        <div className="container m-auto py-16 px-2 lg:px-0">
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="">
+            <div data-aos="fade-right" className="">
               <img src={darkboy} alt="image" className="p-2" />
             </div>
             <div className="">
               <RedTitle text={` why choose us`} />
-              <p className="text-white text-5xl font-semibold py-4">
+              <p data-aos="fade-down" className="text-white text-5xl font-semibold py-4">
                 We Can Give A Shape Of Your Body Here!
               </p>
-              <p className=" text-gray-300 text-xl py-1">
+              <p data-aos="flip-down" className=" text-gray-300 text-xl py-1">
                 At IgniteX, we are dedicated to helping you achieve the body of
                 your dreams. Our expert trainers and nutritionists will work
                 with you to create a personalized fitness and nutrition plan
@@ -46,7 +46,7 @@ const WhyChoose = () => {
 
 function ChooseTile({ img, text }) {
   return (
-    <div className="">
+    <div data-aos="zoom-out" className="">
       <div className=" flex  items-center p-1 gap-x-2">
         <img src={img} alt="image" />
         <h3 className="capitalize text-xl text-gray-300 ">{text}</h3>

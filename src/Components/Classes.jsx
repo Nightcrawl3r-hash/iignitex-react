@@ -4,8 +4,8 @@ import { FaClock, FaUser } from "react-icons/fa6";
 
 const Classes = () => {
   return (
-    <div className="container m-auto py-16 px-2 md:px-0">
-      <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-4 underline decoration-[#FF0336]">
+    <div className=" overflow container m-auto py-16 px-2 lg:px-0">
+      <p data-aos="fade-down" className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-4 underline decoration-[#FF0336]">
         Classes
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center py-16">
@@ -58,6 +58,7 @@ const Classes = () => {
 function ClassTile({ name, time, event, URL }) {
   return (
     <div
+    data-aos="zoom-in"
       className="bg-cover  h-[15rem] rounded-lg flex flex-col align-text-bottom justify-end"
       style={{ backgroundImage: `url(${URL})` }}
     >

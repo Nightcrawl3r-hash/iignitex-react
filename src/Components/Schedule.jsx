@@ -186,7 +186,7 @@ const Schedule = () => {
 
     if (daySchedule) {
       return (
-        <div className="">
+        <div data-aos="zoom-in-up" className="">
           {daySchedule.classes.map((cls) => (
             <div key={cls.className}>
               <div className="grid grid-cols-3 bg-gray-50 p-6 text-gray-800 ">
@@ -205,8 +205,8 @@ const Schedule = () => {
   };
 
   return (
-    <div className="container m-auto py-16 px-2 md:px-0">
-      <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
+    <div className="container overflow-hidden m-auto py-16 px-2 md:px-0">
+      <p data-aos="fade-down" className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
         Schedule
       </p>
       <div className="  py-4 md:py-36">
@@ -214,7 +214,7 @@ const Schedule = () => {
           <div>
             <div className="grid md:grid-cols-5 justify-center items-center">
               <div className="flex flex-col items-center  gap-2">
-                <h1 className="text-2xl font-semibold text-gray-700">
+                <h1 data-aos="zoom-in" className="text-2xl font-semibold text-gray-700">
                   Weekly Schedule
                 </h1>
 

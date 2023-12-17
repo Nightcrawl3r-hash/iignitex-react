@@ -31,10 +31,10 @@ const recent_posts = [
 const RecentPosts = () => {
   return (
     <div className="bg-gray-50 p-2  md:p-6 my-8">
-      <h2 className="text-3xl font-semibold text-gray-700 underline underline-offset-4 decoration-[#dc2626] py-2">
+      <h2 data-aos="fade-down" className="text-3xl font-semibold text-gray-700 underline underline-offset-4 decoration-[#dc2626] py-2">
         Recent Posts
       </h2>
-      <div className="">
+      <div data-aos="fade-left" className="">
         {recent_posts.map((rp)=>(
             <div className=" grid grid-cols-4 gap-2 py-2 items-center" key={rp.date}>
                <div className="">

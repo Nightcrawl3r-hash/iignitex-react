@@ -60,10 +60,10 @@ const Category = () => {
 
   return (
     <div>
-      <p className="text-3xl underline underline-offset-4 decoration-[#dc2626] font-semibold text-gray-800">
+      <p data-aos="fade-down" className="text-3xl underline underline-offset-4 decoration-[#dc2626] font-semibold text-gray-800">
         Category
       </p>
-      <div className="py-4 select-none">
+      <div data-aos="fade-left" className="py-4 select-none">
         {gym_categories.map((cat) => (
           <div className="" key={cat.major_category}>
             <div

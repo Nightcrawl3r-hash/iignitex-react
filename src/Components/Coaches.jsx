@@ -11,10 +11,10 @@ const Coaches = () => {
       <div className="container m-auto py-16">
         <div className="flex flex-col justify-center">
           <RedTitle text={`gym trainers`} />
-          <h1 className="capitalize font-bold text-5xl text-center py-2">
+          <h1 data-aos="fade-down" className="capitalize font-bold text-5xl text-center py-2">
             team of expert coaches
           </h1>
-          <p className="text-center text-gray-600 font-semibold">
+          <p data-aos="fade-down" className="text-center text-gray-600 font-semibold">
             Expert team of coaches helps you succeed in any goal, personalized
             guidance and motivation provided!
           </p>
@@ -45,6 +45,7 @@ const Coaches = () => {
 function CoachTile({ image, title, subtitle }) {
   return (
     <div
+      data-aos="zoom-in"
       className="flex justify-center flex-col items-center bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${splash})` }}
     >

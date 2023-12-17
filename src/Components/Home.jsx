@@ -13,13 +13,13 @@ import HomepageTile from "./HomepageTile";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <div
         className="h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${Background})` }}
       >
-        <div className="grid md:grid-cols-2 items-center h-full container m-auto px-2 md:px-0">
-          <div className="flex flex-col items-start">
+        <div className="grid md:grid-cols-2 items-center h-full container m-auto px-2 lg:px-0">
+          <div data-aos="fade-right" className="flex flex-col items-start">
             <RedTitle text={"find your energy"} />
             <h2 className="text-7xl font-semibold uppercase text-[#dc2626] py-4 ">
               Make your body
@@ -30,7 +30,7 @@ const Home = () => {
             <Button text={`Our Classes`} destination={`classes`} />
           </div>
 
-          <div className=" hidden md:flex flex-row-reverse -rotate-90 text-white absolute top-2/4 right-0 items-center  ">
+          <div  className=" hidden md:flex flex-row-reverse -rotate-90 text-white absolute top-2/4 right-0 items-center  ">
             <p className="uppercase  text-2xl font-bold tracking-widest">
               share
             </p>
@@ -66,8 +66,8 @@ const Home = () => {
 function CallNumber() {
   return (
     <div className="" style={{ backgroundImage: `url(${FooterUp})` }}>
-      <div className="container m-auto px-2 md:px-0">
-        <div className="text-gray-100 flex flex-col py-24">
+      <div className="container m-auto px-2 lg:px-0">
+        <div data-aos="fade-right" className="text-gray-100 flex flex-col py-24">
           <h2 className="text-4xl font-semibold pb-1">
             Need a Fitness Trainer?
           </h2>
@@ -83,13 +83,13 @@ function CallNumber() {
 
 function BlogTileHome() {
   return (
-    <div className="container m-auto py-16 px-2 md:px-0">
+    <div className="container m-auto py-16 px-2 lg:px-0">
       <div className="flex flex-col justify-center">
         <RedTitle text={"blog"} />
-        <h1 className="capitalize font-bold text-5xl text-center py-2">
+        <h1 data-aos="fade-up" className="capitalize font-bold text-5xl text-center py-2">
           our recent news
         </h1>
-        <p className=" text-center text-gray-600 font-semibold">
+        <p data-aos="fade-up" className=" text-center text-gray-600 font-semibold">
           IgniteX an unknown printer took a galley of type and scrambled make a
           type specimen book.
         </p>
@@ -107,9 +107,7 @@ function BlogTileHome() {
           <BlogSmallTile
             text={`Meet Fitness Ambassador Grace`}
             date={`15.08.2023`}
-            subtitle={`Get to know Grace, a fitness enthusiast and dedicated ambassador who is passionate about helping others reach their fitness goals.
-
-`}
+            subtitle={`Get to know Grace, a fitness enthusiast and dedicated ambassador who is passionate about helping others reach their fitness goals.`}
           />
         </div>
       </div>
@@ -119,7 +117,7 @@ function BlogTileHome() {
 
 function BlogSmallTile({ text, date, subtitle }) {
   return (
-    <div className="flex flex-col border-solid shadow-2xl p-4 rounded-lg">
+    <div data-aos="zoom-in" className="flex flex-col border-solid shadow-2xl p-4 rounded-lg">
       <button
         type="button"
         className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm 2xl:text-xl px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-max"

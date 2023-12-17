@@ -9,19 +9,19 @@ const Company = () => {
     <div className="container m-auto py-16">
       <div className="grid grid-cols-5 gap-2 justify-center items-center">
         <div className="">
-          <img src={image1} alt="company image" />
+          <img data-aos="flip-down" src={image1} alt="company image" />
         </div>
         <div className="">
-          <img src={image2} alt="company image" />
+          <img data-aos="flip-down" src={image2} alt="company image" />
         </div>
         <div className="">
-          <img src={image3} alt="company image" />
+          <img data-aos="flip-down" src={image3} alt="company image" />
         </div>
         <div className="">
-          <img src={image4} alt="company image" />
+          <img data-aos="flip-down" src={image4} alt="company image" />
         </div>
         <div className="">
-          <img src={image5} alt="company image" />
+          <img data-aos="flip-down" src={image5} alt="company image" />
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Button = ({ text, destination }) => {
   return (
-    <div>
+    <div data-aos="zoom-in">
       <Link
         to={destination}
         className=" relative uppercase text-tahiti-50 bg-gray-700 text-gray-100 font-bold md:px-6 md:py-4  px-8 py-4 group"

@@ -7,13 +7,13 @@ import image3 from "../assets/3.png";
 import girl from "../assets/girl running.png";
 const WhatWeDo = () => {
   return (
-    <div className="container m-auto py-16 px-2 md:px-0">
+    <div className="container m-auto py-16 px-2 lg:px-0">
       <div className="grid md:grid-cols-2 gap-2">
-        <div className="flex justify-center items-center md:order-last ">
+        <div data-aos="fade-left" className="flex justify-center items-center md:order-last ">
           <img src={girl} alt="image" />
         </div>
 
-        <div className="flex flex-col items-start  ">
+        <div data-aos="fade-right" className="flex flex-col items-start  ">
           <RedTitle text={`what we do`} />
           <h2 className="text-5xl font-semibold py-2 lg:w-2/3">
             Take Your Health And Body To Next Level

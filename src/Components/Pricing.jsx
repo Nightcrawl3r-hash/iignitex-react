@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
-    <div className="container m-auto py-16 px-2 md:px-0">
-      <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
+    <div className=" overflow-hidden container m-auto py-16 px-2 lg:px-0">
+      <p data-aos="fade-down" className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
         Pricing
       </p>
       <div className=" text-center py-8">
-        <h2 className="capitalize text-5xl text-gray-800 font-semibold">
+        <h2 data-aos="fade-up" className="capitalize text-5xl text-gray-800 font-semibold">
           Exclusive pricing plan
         </h2>
-        <p className="py-1 font-semibold text-gray-700">
+        <p data-aos="fade-up" className="py-1 font-semibold text-gray-700">
           IgniteX an unknown printer took a galley of type and scrambled make a
           type specimen book.
         </p>
       </div>
       <div className="grid md:grid-cols-3  gap-4 lg:gap-12">
-        <div className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
+        <div data-aos="zoom-in" className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
           <PricingTable title={`Basic plan`} price={`RS1500`} />
           <div className="flex flex-col gap-y-1">
             <Checked text={`Gym access`} />
@@ -33,7 +33,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
+        <div data-aos="zoom-in" className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
           <PricingTable title={`standard plan`} price={`RS2500`} />
           <div className="flex flex-col gap-y-1">
             <Checked text={`Gym access`} />
@@ -49,7 +49,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
+        <div  data-aos="zoom-in" className=" p-2 lg:p-6 bg-gray-800 rounded-lg">
           <PricingTable title={`premium plan`} price={`RS3500`} />
           <div className="flex flex-col gap-y-1">
             <Checked text={`Gym access`} />

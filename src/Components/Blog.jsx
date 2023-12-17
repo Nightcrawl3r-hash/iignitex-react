@@ -95,8 +95,8 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <div className="container m-auto py-16">
-      <p className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
+    <div className=" overflow-hidden container m-auto py-16">
+      <p data-aos="fade-down" className="capitalize lg:text-5xl md:text-5xl text-4xl font-bold text-gray-950 text-center underline-offset-8 underline decoration-[#FF0336]">
         Blogs
       </p>
       <div className=" grid md:grid-cols-5 lg:grid-cols-4 gap-4 px-2 md:px-0">
@@ -104,8 +104,8 @@ const Blog = () => {
           {blogPosts.map((blog) => (
             <div className="bg-gray-50 p-6" key={blog.author}>
               <div className="">
-                <img src={blog.image} alt="" />
-                <div className="pt-4 flex gap-2 items-center">
+                <img data-aos="zoom-in" src={blog.image} alt="" />
+                <div data-aos="flip-down" className="pt-4 flex gap-2 items-center">
                   <HiCircleStack className="text-[#dc2626]" />
                   <h2 className="font-semibold">{blog.author}</h2>
                   <span className="text-gray-700">{blog.date}</span>
@@ -115,10 +115,10 @@ const Blog = () => {
                 </div>
               </div>
               <div className="">
-                <h2 className="text-4xl font-bold text-gray-800">
+                <h2 data-aos="zoom-in" className="text-4xl font-bold text-gray-800">
                   {blog.title}
                 </h2>
-                <p className="text-gray-700">{blog.content}</p>
+                <p data-aos="zoom-in" className="text-gray-700">{blog.content}</p>
               </div>
             </div>
           ))}

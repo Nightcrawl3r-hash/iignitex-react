@@ -9,10 +9,15 @@ import Blog from "./Components/Blog";
 import Classes from "./Components/Classes";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+//ANimation library
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+//********************* */
 
 const App = () => {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <BrowserRouter>
         <Navbar />
         <Routes>
